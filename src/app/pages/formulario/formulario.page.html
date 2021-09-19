@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>formulario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header class="ion-text-center card-header" color="danger">
+      <ion-title>Formulario Reactivo</ion-title>
+    </ion-card-header>
+
+    <ion-card-content class="ion-margin-top">
+
+      <form [formGroup]="formulario" (click)="enviarDatos()">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Nombre</mat-label>
+          <input formControlName="usuario" matInput placeholder="hola" type="text">
+        </mat-form-field>
+
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Correo</mat-label>
+          <input formControlName="email" matInput placeholder="hola" type="email">
+        </mat-form-field>
+
+        <button [disabled]="formulario.invalid" class="boton-login" mat-raised-button type="submit" color="accent">ingresar</button>
+      </form>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>
