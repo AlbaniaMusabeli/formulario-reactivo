@@ -1,0 +1,7 @@
+{
+  "name": "FormReactivo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

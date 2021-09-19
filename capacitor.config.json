@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "FormReactivo",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
